@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recursos</title>
+</head>
+<body>
+<header>
+    <img class="logo" src="https://its.utu.edu.uy/wp-content/uploads/sites/33/2025/06/cropped-Logo-DGETP-UTU-blanco-transparente-PNG-1536x302.png" alt="">
+ <nav>
+  <a href="index.html" class="nav-link">
+    <!-- Icono HOME -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
+    </svg>
+    HOME
+  </a>
+
+  <a href="IndexRecursos.html" class="nav-link">
+    <!-- Icono RECURSOS (Cubo) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M21 16V8a1 1 0 0 0-.553-.894l-8-4a1 1 0 0 0-.894 0l-8 4A1 1 0 0 0 3 8v8a1 1 0 0 0 .553.894l8 4a1 1 0 0 0 .894 0l8-4A1 1 0 0 0 21 16zM12 3.618 19.764 8 12 12.382 4.236 8 12 3.618zM5 9.236 11 12.618v6.146l-6-3V9.236zM13 18.764v-6.146l6-3v6.528l-6 2.618z" fill="currentColor"/>
+    </svg>
+    Recursos
+  </a>
+
+  <a href="" class="nav-link">
+    <!-- Icono ESPACIOS (Librería) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M4 4h16v2H4zM4 10h16v2H4zM4 16h16v2H4z" fill="currentColor"/>
+    </svg>
+    Espacios
+  </a>
+
+  <a href="" class="nav-link">
+    <!-- Icono HORARIOS (Reloj) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 1.75A10.25 10.25 0 1 0 22.25 12 10.263 10.263 0 0 0 12 1.75zm0 18.5A8.25 8.25 0 1 1 20.25 12 8.26 8.26 0 0 1 12 20.25zm.75-13.5h-1.5v6l5.25 3.15.75-1.23-4.5-2.67z" fill="currentColor"/>
+    </svg>
+    Horarios
+  </a>
+
+  <a href="" class="nav-link">
+    <!-- Icono EVENTOS (Calendario) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14zM5 7V6h14v1z" fill="currentColor"/>
+    </svg>
+    Eventos
+  </a>
+
+  <a href="" class="nav-link">
+    <!-- Icono SALIR (Puerta con flecha) -->
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M10 17v-2h4v-2h-4v-2l-5 3zM18 3h-7a1 1 0 0 0 0 2h7v14h-7a1 1 0 0 0 0 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z" fill="currentColor"/>
+    </svg>
+    Salir
+  </a>
+
+  <span></span>
+ </nav>
+
+
+ <div class="buscador">
+    <input type="text" placeholder="Buscar" required>
+    <div class="btn"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M10 2a8 8 0 105.293 14.293l5.207 5.207 1.414-1.414-5.207-5.207A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" fill="currentColor"/>
+  </svg></div>
+ </div>
+ <a href="#" class="nav-link">
+  <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" fill="currentColor"/>
+  </svg>
+ </a>
+ </header>
+<main class="contenedor">
+    <h1>Recursos</h1>
+
+    <div class="tabs">
+      <button onclick="mostrarSeccion('tecnologia')">Equpamiento tecnologico</button>
+      <button onclick="mostrarSeccion('recursos')">Recursos Humanos</button>
+      <button onclick="mostrarSeccion('materiales')">Materiales Didacticos</button>
+    </div>
+
+    <div class="filtros">
+      <input type="text" placeholder="Buscar" />
+      <select>
+        <option>Estado</option>
+        <option>Disponible</option>
+        <option>Reservado</option>
+        <option>En mantenimiento</option>
+      </select>
+      <select>
+        <option>Ubicación</option>
+        <option>Laboratorio 1</option>
+        <option>Aula 4</option>
+      </select>
+    </div>
+
+  <section class="tarjetas-recursos">
+      <!-- Aquí van las tarjetas individuales de cada recurso -->
+    
+     <section class="tarjeta tecnologia" style="display: block;">
+     <h3>Proyector Epson X345</h3>
+     
+      <div class="contenido-horizontal">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/BVFxrFKZ/projector-3969549.png" alt="projector-3969549" border="0"></a>
+       <div class="detalle-texto">
+         <p><strong>Estado:</strong> Disponible</p>
+         <p><strong>Ubicación:</strong> Aula 5</p>
+         <p><strong>Tipo:</strong> Equipamiento Audiovisual</p>
+         <p><strong>Código:</strong> PRX-202</p>
+          <button class="btn-reservar">Reservar</button>
+       </div>
+      </div>
+      </div>
+    </section>
+      <section class="tarjeta tecnologia" style="display: block;">
+     <h3>Proyector Epson X345</h3>
+     
+      <div class="contenido-horizontal">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/BVFxrFKZ/projector-3969549.png" alt="projector-3969549" border="0"></a>
+       <div class="detalle-texto">
+         <p><strong>Estado:</strong> Disponible</p>
+         <p><strong>Ubicación:</strong> Aula 5</p>
+         <p><strong>Tipo:</strong> Equipamiento Audiovisual</p>
+         <p><strong>Código:</strong> PRX-202</p>
+          <button class="btn-reservar">Reservar</button>
+       </div>
+      </div>
+      </div>
+    </section>
+      <section class="tarjeta tecnologia" style="display: block;">
+     <h3>Proyector Epson X345</h3>
+     
+      <div class="contenido-horizontal">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/BVFxrFKZ/projector-3969549.png" alt="projector-3969549" border="0"></a>
+       <div class="detalle-texto">
+         <p><strong>Estado:</strong> Disponible</p>
+         <p><strong>Ubicación:</strong> Aula 5</p>
+         <p><strong>Tipo:</strong> Equipamiento Audiovisual</p>
+         <p><strong>Código:</strong> PRX-202</p>
+          <button class="btn-reservar">Reservar</button>
+       </div>
+      </div>
+      </div>
+    </section>
+      <section class="tarjeta tecnologia" style="display: block;">
+     <h3>Proyector Epson X345</h3>
+     
+      <div class="contenido-horizontal">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/BVFxrFKZ/projector-3969549.png" alt="projector-3969549" border="0"></a>
+       <div class="detalle-texto">
+         <p><strong>Estado:</strong> Disponible</p>
+         <p><strong>Ubicación:</strong> Aula 5</p>
+         <p><strong>Tipo:</strong> Equipamiento Audiovisual</p>
+         <p><strong>Código:</strong> PRX-202</p>
+          <button class="btn-reservar">Reservar</button>
+       </div>
+      </div>
+      </div>
+    </section>
+    <section class="tarjeta recursos" style="display: none;">
+  <h3>Prof. Mariana López</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/JdDdPdh/avatar-docente.png" alt="avatar-docente" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Área:</strong> Informática</p>
+      <p><strong>Rol:</strong> Docente de Programación</p>
+      <p><strong>ID Funcionario:</strong> RH-017</p>
+      <button class="btn-reservar">Asignar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta recursos" style="display: none;">
+  <h3>Prof. Mariana López</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/JdDdPdh/avatar-docente.png" alt="avatar-docente" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Área:</strong> Informática</p>
+      <p><strong>Rol:</strong> Docente de Programación</p>
+      <p><strong>ID Funcionario:</strong> RH-017</p>
+      <button class="btn-reservar">Asignar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta recursos" style="display: none;">
+  <h3>Prof. Mariana López</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/JdDdPdh/avatar-docente.png" alt="avatar-docente" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Área:</strong> Informática</p>
+      <p><strong>Rol:</strong> Docente de Programación</p>
+      <p><strong>ID Funcionario:</strong> RH-017</p>
+      <button class="btn-reservar">Asignar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta recursos" style="display: none;">
+  <h3>Prof. Mariana López</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/JdDdPdh/avatar-docente.png" alt="avatar-docente" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Área:</strong> Informática</p>
+      <p><strong>Rol:</strong> Docente de Programación</p>
+      <p><strong>ID Funcionario:</strong> RH-017</p>
+      <button class="btn-reservar">Asignar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta materiales" style="display: none;">
+  <h3>Libro de Física - Nivel 1</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/K7gq4w9/libro-fisica.png" alt="libro-fisica" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Ubicación:</strong> Biblioteca</p>
+      <p><strong>Tipo:</strong> Material Didáctico - Libro</p>
+      <p><strong>Código:</strong> MD-108</p>
+      <button class="btn-reservar">Reservar</button>
+    </div>
+  </div>
+</section>
+
+<section class="tarjeta materiales" style="display: none;">
+  <h3>Libro de Física - Nivel 1</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/K7gq4w9/libro-fisica.png" alt="libro-fisica" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Ubicación:</strong> Biblioteca</p>
+      <p><strong>Tipo:</strong> Material Didáctico - Libro</p>
+      <p><strong>Código:</strong> MD-108</p>
+      <button class="btn-reservar">Reservar</button>
+    </div>
+  </div>
+</section>
+
+<section class="tarjeta materiales" style="display: none;">
+  <h3>Libro de Física - Nivel 1</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/K7gq4w9/libro-fisica.png" alt="libro-fisica" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Ubicación:</strong> Biblioteca</p>
+      <p><strong>Tipo:</strong> Material Didáctico - Libro</p>
+      <p><strong>Código:</strong> MD-108</p>
+      <button class="btn-reservar">Reservar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta materiales" style="display: none;">
+  <h3>Libro de Física - Nivel 1</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/K7gq4w9/libro-fisica.png" alt="libro-fisica" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Ubicación:</strong> Biblioteca</p>
+      <p><strong>Tipo:</strong> Material Didáctico - Libro</p>
+      <p><strong>Código:</strong> MD-108</p>
+      <button class="btn-reservar">Reservar</button>
+    </div>
+  </div>
+</section>
+<section class="tarjeta materiales" style="display: none;">
+  <h3>Libro de Física - Nivel 1</h3>
+
+  <div class="contenido-horizontal">
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/K7gq4w9/libro-fisica.png" alt="libro-fisica" border="0">
+    </a>
+    <div class="detalle-texto">
+      <p><strong>Estado:</strong> Disponible</p>
+      <p><strong>Ubicación:</strong> Biblioteca</p>
+      <p><strong>Tipo:</strong> Material Didáctico - Libro</p>
+      <p><strong>Código:</strong> MD-108</p>
+      <button class="btn-reservar">Reservar</button>
+    </div>
+  </div>
+</section>
+
+    
+  </section>
+    
+</body>
+<script>
+  function mostrarSeccion(seccion) {
+    document.querySelectorAll('.tarjeta').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.' + seccion).forEach(el => el.style.display = 'block');
+  }
+</script>
+</html>
